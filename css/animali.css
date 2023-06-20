@@ -58,6 +58,15 @@ div.info{
 div.inquinamento{
     max-width: 50%;
     margin: 3% 5% 0 5%;
+
+}
+div.inquinamento a{
+    font-size: 22px;
+    padding: 4% 0 0 0;
+    text-decoration: none;
+    color: white;
+
+
 }
 div.mareButton {
     display: flex;
