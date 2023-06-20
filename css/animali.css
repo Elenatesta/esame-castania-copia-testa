@@ -1,0 +1,158 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+nav.black ul {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    margin: 2% 0 0 0;
+    padding: 0% 2% 2% 2%;
+    border-bottom: 0.3vh solid white;
+}
+nav.black ul li.spazio {
+padding-left: 8%;
+}
+
+nav.black a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav.black a.click:hover {
+    background-color: grey;
+}
+span{
+    display: block;
+    width: 47vw;
+}
+
+div.hero {
+    position: relative;
+}
+div img{
+    width: 100%;
+}
+
+div.intro {
+    max-width: 35%;
+    padding: 0 0 0 10%;
+    position: absolute;
+    bottom: 5%;
+    font-size: 25px;
+}
+div.intro h3{
+font-size: 20px;
+}
+
+
+div.info{
+    display: flex;
+    padding: 4% 0 0 0;
+}
+div.inquinamento{
+    max-width: 50%;
+    margin: 3% 5% 0 5%;
+}
+div.mareButton {
+    display: flex;
+    background-color: #3E6FB3;
+    height: 10vh;
+    width: 100%;
+    margin: 3% 0 0 15%;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+div.mareButton:hover {
+    background-color: #9eb4d3;
+}
+
+div.terraButton {
+    display: flex;
+    background-color: #5DA85C;
+    height: 10vh;
+    width: 100%;
+    margin: 3% 0 0 15%;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+
+div.terraButton:hover {
+    background-color: #86a386;
+}
+
+div.inquinamento h2 {
+    font-size: 25px;
+
+}
+
+div.inquinamento h3.mare{
+    padding: 8% 0 2% 16%;
+    color: #3E6FB3;
+}
+div.inquinamento h3.terra{
+    padding: 8% 0 2% 16%;
+    color: #5DA85C;
+}
+ div.inquinamento p{
+    padding: 0 0 3% 16%;
+    width: 34vw;
+    font-size: 20px;
+ }
+
+ div.vita{
+    margin: 4.5% 10% 5% 9%;
+    background-color: #33383E;
+    /* background-color: rgba(62,111,179, 0.3); */
+    width: 100%;
+    border-radius: 10px;
+ }
+
+ div.vita ul{
+    width: 100%;
+    padding: 0 0 0 8%;
+    font-size: 20px;
+ }
+ div.vita ul li{
+    width: 30vw
+ }
+ div.vita ul li + li{
+    padding: 2% 0 0 0;
+ }
+
+ div.img {
+    width: 100%;
+    max-width: 80%;
+    max-height: 50%;
+    display: flex;
+    gap: 10%;
+    padding: 0 0 5% 10%;
+ }
+
+ footer{
+    background-color:black ;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    border-top: 2px solid white;
+    
+}
+
+div.foot{
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+    display: flex;
+    gap: 58%;
+   
+}
+
+
+  
+
