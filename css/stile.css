@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     background-color: black;
@@ -14,7 +14,7 @@ nav.black ul {
 }
 
 nav.black ul li.spazio {
-padding-left: 8%;
+    padding-left: 8%;
 }
 
 nav.black a {
@@ -22,12 +22,14 @@ nav.black a {
     font-size: 25px;
     text-decoration: none;
     padding: 20px;
-   
+
 }
+
 nav.black a.click:hover {
     background-color: grey;
 }
-span{
+
+span {
     display: block;
     width: 47vw;
 }
@@ -36,10 +38,11 @@ span{
 div.hero {
     position: relative;
 }
+
 div img {
     width: 100%;
-  
-    
+
+
 }
 
 div.text {
@@ -51,60 +54,166 @@ div.text {
     font-size: 30px;
 }
 
-h1{
+h1 {
     color: white;
     font-size: 45px;
-    padding-left:10%;
+    padding-left: 10%;
     margin-top: 5%;
 }
 
-div.blocco{
-    display: flex;   
+div.blocco {
+    display: flex;
     gap: 8%;
     padding: 0 10% 10% 10%;
 }
 
-div.uno{
-color: white;
-font-size: 25px;
-width: 35vw;
+div.uno {
+    color: white;
+    width: 35vw;
+    font-size: 25px;
 }
 
-div.due{
-   font-size: 25px;
+div.due {
+    font-size: 25px;
 }
 
 
-ul.mare li{
-    color:#C7DDFD ;
-}
-
-ul.terra li{
-    color: #BAECB9;
-}
-a.mare{
+ul.mare li {
     color: #C7DDFD;
 }
 
-a.terra{
+ul.terra li {
     color: #BAECB9;
 }
 
-footer{
-        background-color:black ;
-        padding-top: 100px;
-        padding-bottom: 10px;
+a.mare {
+    color: #C7DDFD;
+}
+
+a.terra {
+    color: #BAECB9;
+}
+
+footer {
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    border-top: 2px solid white;
+
+}
+
+div.foot {
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+    display: flex;
+    gap: 58%;
+}
+
+@media(max-width: 1500px) {
+    div.blocco {
+        display: grid;
+        grid-template-columns: 35vw repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    footer {
+        padding-top: 2vw;
+        padding-bottom: 1vw;
         border-top: 2px solid white;
-        
+    
     }
     
-div.foot{
-        color: white;
+    div.foot {
         font-size: 25px;
-        padding-left: 20px;
-        display: flex;
-        gap: 58%;
-       
+        padding-left: 5vw;
+        gap: 50%;
+    }
 }
+
+@media(max-width: 1200px){
+    span {
+        width: 32vw;
+    }
+
+    div.foot {
+        padding-left: 4vw;
+        gap: 45%;
+    }
+}
+
+@media (max-width: 910px) {
+    span {
+        width: 2vw;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    div.blocco {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2%
+    }
+
+    div.uno {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    div.due {
+        display: flex;
+        width: 100vw;
+        justify-content: left;
+        font-size: 25px;
+    }
+
+    div.foot {
+        padding-left: 4vw;
+        gap: 28%;
+    }
+}
+
+@media (max-width: 520px) {
+    h2 {
+        font-size: 20px;
+    }
+
+
+    span{
+        display: none;
+    }
+
+    nav.black a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    div.foot {
+        font-size: 20px;
+        padding-left: 4vw;
+        gap: 10%;
+    }
+}
+
+@media (max-width: 400px){
+    h2 {
+        font-size: 17px;
+    }
+
+    nav.black a {
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    div.foot {
+        font-size: 15px;
+        padding-left: 3vw;
+        gap: 10%;
+    }
+
+}
+
+
 
 
