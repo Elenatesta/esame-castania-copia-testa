@@ -34,113 +34,244 @@ span {
 }
 
 
-div.hero{
+div.hero {
     position: relative;
 }
 
 
-div img{
+div img {
     width: 100%;
 }
 
-div.text{
+div.text {
     max-width: 30%;
     padding: 0 0 0 5%;
     position: absolute;
     color: white;
-    bottom: 70%;
+    top: 2%;
     font-size: 35px;
 }
 
+div.descrizione {
+    width: 60%;
+    padding: 0 15% 0 22%;
+}
 
-h2{
+div.descrizione h2 {
     color: white;
     font-size: 35px;
-    padding: 0 0 3% 17%;
 }
 
-p{
+div.descrizione p {
     color: white;
     font-size: 30px;
-   padding: 0 0 0 15%;
 }
 
-div.blocco{
-    display: flex;
+div.blocco {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10%;
-    padding: 0 15% 0% 15%;
-    
+    padding: 0 15% 10% 15%;
 }
-div.due{
+
+div.due {
     width: 30vw;
 
 }
-div.cause{
+
+div.cause {
     display: flex;
     width: 100%;
     margin: 4.5% 10% 5% 0;
-    height: 10vh;
+    height: auto;
     background-color: #AE1E1E;
     justify-content: center;
     border-radius: 5px;
 }
 
-div.soluzione{
+div.soluzione {
     display: flex;
     width: 100%;
-    height: 10vh;
+    height: auto;
     background-color: #1C881A;
     justify-content: center;
     margin: 4.5% 10% 5% 0;
     border-radius: 5px;
 }
 
-div h3.button{
-    padding: 1% 0 0 0;
+div p.button {
+    font-weight: bolder;
+    padding: 0.5% 0 0 0;
+    font-size: 30px;
 }
-div.lista{
-    margin: 4% 10% 10% 0;
-    height: 60%;
+
+div.lista {
+    display: flex;
+    margin: 4% 10% 4% 0;
+    height: auto;
     background-color: #33383E;
     width: 100%;
     border-radius: 5px;
     color: white;
     font-size: 20px;
+    vertical-align: middle;
 }
-
-div.list ul li{
-    color: white;
-    text-decoration: none;
-}
-
 
 div.lista ul li {
     color: white;
-    width: 30vw
+    width: 100%
 }
 
 div.lista ul li+li {
-    padding: 2% 0 0 0;
+    padding: 4% 0 0 0;
 }
 
-div.lista ul li a{
+div.lista ul li a {
     color: white;
     text-decoration: none;
 }
 
-footer{
-    background-color:black ;
-    padding-top: 100px;
+footer {
+    background-color: black;
+    padding-top: 7%;
     padding-bottom: 10px;
     border-top: 2px solid white;
-    
 }
 
-div.foot{
+div.foot {
     color: white;
-    font-size: 20px;
-   
+    font-size: 25px;
+    padding-left: 20px;
     display: flex;
-    gap: 30%;
-   
+    gap: 58%;
+}
+
+@media(max-width: 1500px) {
+    footer {
+        margin-top: 20%;
+        padding-top: 2vw;
+        padding-bottom: 1vw;
+        border-top: 2px solid white;
+    }
+
+
+    div.foot {
+        font-size: 25px;
+        padding-left: 5vw;
+        gap: 50%;
+    }
+}
+
+@media(max-width: 1200px) {
+    span {
+        width: 32vw;
+    }
+
+    div.foot {
+        padding-left: 4vw;
+        gap: 45%;
+    }
+}
+
+@media(max-width: 1111px) {
+    div.descrizione {
+        width: 70%;
+        padding: 0 0 0 20%;
+    }
+
+    div.descrizione h2 {
+        font-size: 25px;
+    }
+    div.text h2 {
+        font-size: 25px;
+    }
+
+    div.descrizione p {
+        font-size: 20px;
+    }
+
+    div.due {
+        padding: 0 0 0 20%;
+        width: 60%;
+
+    }
+
+    div.lista {
+        width: 100%;
+    }
+}
+
+@media (max-width: 902px) {
+    span {
+        width: 2vw;
+    }
+
+    section.grid {
+        padding: 0 0 20% 15%;
+        gap: 2%;
+        height: auto;
+    }
+
+
+    div.foot {
+        padding-left: 4vw;
+        gap: 28%;
+    }
+}
+
+@media (max-width: 874px) {
+    span {
+        width: 2vw;
+    }
+
+
+
+
+    div.foot {
+        padding-left: 4vw;
+        gap: 28%;
+    }
+}
+
+@media (max-width: 520px) {
+    span {
+        display: none;
+    }
+
+    div.blocco {
+        padding: 0 0 10% 0;
+    }
+
+    nav.black a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    footer {
+        padding-top: 10%;
+    }
+
+    div.foot {
+        font-size: 18px;
+        padding-left: 4vw;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    nav.black a {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    footer {
+        padding-top: 10%;
+    }
+
+    div.foot {
+        font-size: 15px;
+        padding-left: 3vw;
+        gap: 10%;
+    }
+
 }

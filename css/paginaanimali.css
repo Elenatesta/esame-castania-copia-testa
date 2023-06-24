@@ -1,208 +1,273 @@
-body{
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+html {
+  width: 100%;
+  height: auto;
+  min-height: 100%
 }
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
 
 nav.black ul {
-   background-color: black;
-   list-style: none;
-   display: flex;
-   margin: 2% 0 0 0;
-   padding: 0% 2% 2% 2%;
-   border-bottom: 0.3vh solid white;
+  background-color: black;
+  list-style: none;
+  display: flex;
+  margin: 2% 0 0 0;
+  padding: 0% 2% 2% 2%;
+  border-bottom: 0.3vh solid white;
 }
 
-nav.black a{
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    text-decoration: none;
-    padding: 20px;
+nav.black a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 20px;
 
 }
- nav.black ul li.spazio{
-    padding-left: 8%;
- }
- 
- nav.black a.click:hover{
-    background-color: grey;
- }
 
- span{
-    display: block;
-    width: 47vw;
- }
+nav.black ul li.spazio {
+  padding-left: 8%;
+}
 
- 
-main{
-   margin: auto;
-   max-width: 800px;
+nav.black a.click:hover {
+  background-color: grey;
+}
+
+span {
+  display: block;
+  width: 47vw;
+}
+
+main {
+  height: auto;
+}
+
+section.grid {
+  display: grid;
+  flex: content;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5%;
+  font-size: 16px;
+  padding: 0 0 20% 13%;
+  width: 70vw;
+  justify-items: center;
+  height: 100%;
+}
+
+section.grid div {
+  width: 16vw;
+  height: 18vw;
+}
+
+section.grid div ul {
+  text-decoration: none;
+  font-size: 16px;
+  font-size: large;
+}
+
+.mare{
+  color: #C7DDFD;
+
+}
+section.grid a{
+  text-decoration: none;
+}
+
+.terra {
+  color: #BAECB9;
+}
+
+section.grid div.imageContainer {
+  max-height: 70%;
+  max-width: 100%;
+}
+
+div.imageContainer img {
+  max-width: 100%;
+  height: 100%;
 }
 
 
-section.card-1{
- 
-   padding: 5px;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 20px;
-   margin-top: 20px;
-   margin: 0 5px;
-   font-size: 16px;
-   padding: 15px;
-   color: #C7DDFD;
-   margin-top: 5px;
+footer {
+  background-color: black;
+  padding-top: 7%;
+  padding-bottom: 10px;
+  border-top: 2px solid white;
 }
 
-section.card-1 ul{
-   padding: 10px;
-   text-decoration: none;
-   font-size: 16px;
-   font-size: large;
+div.foot {
+  color: white;
+  font-size: 25px;
+  padding-left: 20px;
+  display: flex;
+  gap: 58%;
+}
 
+@media(max-width: 1500px) {
+  footer {
+     margin-top: 12vw;
+     padding-top: 2vw;
+     padding-bottom: 1vw;
+     border-top: 2px solid white;
+  }
   
+  section.grid{
+     padding: 0 0 20% 15%;
+     gap: 5%;
+     height: auto;
+  }
+  section.grid div {
+     width: 100%;
+     height: 90%;
+  }
+  section.grid div.imageContainer {
+     max-height: 100%;
+     max-width: 100%;
+  }
+
+  footer{
+     margin-top: 35%;
+  }
+  div.foot {
+     font-size: 25px;
+     padding-left: 5vw;
+     gap: 50%;
+  }
 }
 
-section.card-1 a {
-   text-decoration: none;
-   color: #C7DDFD;
+@media(max-width: 1200px) {
+  span {
+     width: 32vw;
+  }
+
+  div.foot {
+     padding-left: 4vw;
+     gap: 45%;
+  }
+}
+
+@media (max-width: 902px) {
+  span {
+     width: 2vw;
+  }
   
- 
+  section.grid{
+     padding: 0 0 20% 15%;
+     gap: 2%;
+     height: auto;
+  }
 
+  section.grid div {
+     width: 100%;
+     height: 85%;
+  }
+
+  section.grid div.imageContainer {
+     height: 100%;
+     max-width: 100%;
+  }
+
+  footer {
+     margin-top: 10%;
+  }
+
+  div.foot {
+     padding-left: 4vw;
+     gap: 28%;
+  }
 }
 
-section.card-1 img{
-
-   height: 150px;
-   width: 100%;
-}
-
-section.card-2{
- 
-   padding: 5px;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 20px;
-   margin-top: 20px;
-   margin: 0 5px;
-   font-size: 16px;
-   padding: 10px;
-   
-   color: #C7DDFD;
-   margin-top: 5px;
-}
-
-section.card-2 ul{
-   padding: 10px;
-   text-decoration: none;
-   font-size: 16px;
-   font-size: large;
-   
-}
-
-section.card-2 a {
-   text-decoration: none;
-   color: #C7DDFD;
-   
-
-}
-
-section.card-2 img{
-
-   height: 150px;
-   width: 100%;
-}
-
-
-section.card-3{
- 
-   padding: 5px;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 20px;
-   margin-top: 20px;
-   margin: 0 5px;
-   font-size: 16px;
-   padding: 10px;
-   
-   color: #baecb9;
-   margin-top: 5px;
-}
-
-section.card-3 ul{
-   padding: 10px;
-   text-decoration: none;
-   font-size: 16px;
-   font-size: large;
+@media (max-width: 874px) {
+  span {
+     width: 2vw;
+  }
   
+  section.grid{
+     padding: 0 0 20% 15%;
+     gap: 2%;
+     height: auto;
+  }
+
+  section.grid div {
+     width: 80%;
+     height: 85%;
+  }
+
+  section.grid div.imageContainer {
+     height: 100%;
+     max-width: 100%;
+  }
+
+  footer {
+     margin-top: 110%;
+  }
+
+  div.foot {
+     padding-left: 4vw;
+     gap: 28%;
+  }
 }
 
-section.card-3 a {
-   text-decoration: none;
-   color: #baecb9;
- 
+@media (max-width: 520px) {
+  span {
+     display: none;
+  }
 
-}
+  nav.black a {
+     font-size: 20px;
+     padding: 5px;
+  }
 
-section.card-3 img{
+  section.grid{
+     padding: 0 0 20% 12%;
+     row-gap: 2%;
+     height: auto;
+  }
 
-   height: 150px;
-   width: 100%;
-}
+  section.grid div {
+     width: 90%;
+     height: 85%;
+  }
 
-section.card-4{
- 
-   padding: 5px;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 20px;
-   margin-top: 20px;
-   margin: 0 5px;
-   font-size: 16px;
-   padding: 10px;
-   
-   color: #baecb9;
-   margin-top: 5px;
-}
-
-section.card-4 ul{
-   padding: 10px;
-   text-decoration: none;
-   font-size: 16px;
-   font-size: large;
+  footer{
+     margin-top: 150%;
+  }
   
+  div.foot {
+     font-size: 20px;
+     padding-left: 4vw;
+     gap: 10%;
+  }
 }
 
-section.card-4 a {
-   text-decoration: none;
-   color: #baecb9;
-   
+@media (max-width: 400px) {
+  nav.black a {
+     font-size: 17px;
+     padding: 10px;
+  }
+
+  section.grid{
+     padding: 0 0 20% 12%;
+     gap: 2%;
+     height: auto;
+  }
+
+  section.grid div {
+     width: 90%;
+     height: 85%;
+  }
+
+  footer{
+     margin-top: 170%;
+  }
+  div.foot {
+     font-size: 15px;
+     padding-left: 3vw;
+     gap: 10%;
+  }
 
 }
-
-section.card-4 img{
-
-   height: 150px;
-   width: 100%;
-   margin-bottom: 20%;
-}
-
-
-
-
- footer{
-    background-color: black;
-    padding-top: 100px;
-    padding-bottom: 10px;
-    border-top: 2px solid white;
-
- }
-
- div.foot{
-    color: white;
-    font-size: 25px;
-    padding-left: 20px;
-    display: flex;
-    gap: 60%;
- }
