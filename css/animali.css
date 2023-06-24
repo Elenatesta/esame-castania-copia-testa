@@ -241,7 +241,7 @@ div.foot{
        gap: 5%;
     }
     nav.black a {
-        font-size: 20px;
+        font-size: 18px;
         padding: 5px;
     }
 
@@ -301,9 +301,10 @@ div.foot{
 
 @media (max-width: 400px){
     nav.black a {
-        font-size: 17px;
+        font-size: 15px;
         padding: 10px;
     }
+    
     div.inquinamento{
         padding: 0 5% 0 0 ;
     }
