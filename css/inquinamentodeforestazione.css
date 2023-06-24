@@ -49,7 +49,7 @@ div.text {
     position: absolute;
     color: white;
     top: 2%;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 div.descrizione {
@@ -147,6 +147,8 @@ div.foot {
 }
 
 @media(max-width: 1500px) {
+    
+
     footer {
         margin-top: 20%;
         padding-top: 2vw;
@@ -163,8 +165,12 @@ div.foot {
 }
 
 @media(max-width: 1200px) {
+
+    nav.black ul{
+        padding:2% 0 2% 0 ;
+    }
     span {
-        width: 32vw;
+        width: 38vw;
     }
 
     div.foot {
@@ -174,6 +180,7 @@ div.foot {
 }
 
 @media(max-width: 1111px) {
+
     div.descrizione {
         width: 70%;
         padding: 0 0 0 20%;
@@ -202,6 +209,7 @@ div.foot {
 }
 
 @media (max-width: 902px) {
+
     span {
         width: 2vw;
     }
@@ -221,10 +229,8 @@ div.foot {
 
 @media (max-width: 874px) {
     span {
-        width: 2vw;
+        width: 13vw;
     }
-
-
 
 
     div.foot {
@@ -234,8 +240,15 @@ div.foot {
 }
 
 @media (max-width: 520px) {
+   
+    nav.black a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
     span {
         display: none;
+        
     }
 
     div.blocco {
@@ -244,7 +257,7 @@ div.foot {
 
     nav.black a {
         font-size: 20px;
-        padding: 5px;
+
     }
 
     footer {
@@ -264,6 +277,9 @@ div.foot {
         padding: 10px;
     }
 
+    div.text h2{
+        font-size: 20px;
+    }
     footer {
         padding-top: 10%;
     }
