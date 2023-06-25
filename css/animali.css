@@ -292,6 +292,9 @@ div.foot{
         padding: 0 0 0 12%;
     }
     
+    div.terraButton a{
+        padding: 0 0 0 5%;
+    }
     div.foot {
         font-size: 20px;
         padding-left: 4vw;
